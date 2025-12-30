@@ -7,8 +7,8 @@ class endToEndCityTempo {
            .locator('li, div[role="option"]')
            .filter({ hasText: /Pune/i })
            .first();
-        this.pickupInput = this.page.getByRole('textbox', { name: 'Pickup from' });
-      //  this.dropInput = this.page.getByRole('textbox', { name: 'Drop at' });
+        this.pickupInput = this.page.getByRole('textbox', { name: 'Pickup from' }).nth(0);
+      //  this.dropInput = this.page.getByRole('textbox', { name: 'Drop at' }).nth(1);
       //  // Generic autosuggest option
       //  this.autoSuggestOption = this.page.locator('li, div[role="option"]').first();
       //  this.checkPricesBtn = this.page.getByRole('button', { name: 'Check Prices' });
